@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Perfil Pessoal</title>
+    <style>
+      .centro {
+        text-align: center;
+        color: purple;
+        font-family: "Times New Roman";
+      }
+      .texto {
+        width: 500px;
+      }
+      .cabecalho {
+        background: #fae6fa;
+        color: purple;
+        text-align: center;
+        padding: 15px;
+        box-shadow: 0 4px 10px rgb(0,0,0,0.1);
+      }
+      .foto img {
+        width: 350px;
+        height: 400px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10%;
+        border: 5px solid purple;
+      }
+      .principal {
+        max-width: 800px;
+        margin: auto;
+      }
+      .secao {
+        margin-bottom: 30px;
+      }
+      .aside {
+        margin-top: 20px;
+        text-align: center;
+      }
+      .rodape {
+        background: #fde6fa;
+        color: white;
+        text-align: center;
+        padding: 25px;
+        margin-top: 40px;
+      }
+      .jogos {
+        display: flex;
+        justify-content: center;
+        background-color: #fae6fa;
+        border: 3px solid purple;
+        border-radius: 20px;
+        padding: 20px;
+        margin: 20px ;
+        gap: 20px;
+        box-shadow: 0 4px 10px rgb(0,0,0,0.5);
+      }
+      .jogos img {
+        border-radius: 20px;
+        border: 3px solid purple;
+        width: 150px;
+        position: relative;
+        
+        transition: transform 0.3s;
+      }
+      .jogos img:hover {
+        transform: scale(1.1);
+      }
+
+      #macarrao {
+        width: 200px;
+        height: 200px;
+        display: block;
+        cursor: pointer;
+      }
+
+      #explosion {
+        width: 200px;
+        height: 200px;
+        display: none;
+        top: 100px;
+        left: 100px;
+      }
+
+      .extra {
+        justify-content: center;
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <h1 style="font-family:Times New Roman;">Gabriel Smith Gomes dos Santos</h1>
+      <h2>921C Desenvolvimento de Sistemas</h2>
+      <div class="foto">
+        <img src="foto.jpg" alt="Foto de Perfil"/>
+      </div>
+      <h3><em>20/10/2010</em></h3>
+      <nav>
+        <a href="#sobre">Sobre Mim</a>
+        <a href="#conhecimentos">Conhecimento na Área</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+    <main class="principal">
+      <section id="sobre" class="secao">
+        <h1 style="font-family:Times New Roman; color:purple">Sobre mim:</h1>
+        <article>
+          <p class="texto">Tenho 15 anos e sou estudante do Ifal campus Maceió, e atualmente estou cursando Desenvolvimento de Sistemas na mesma instituição.
+             Sempre tive bastante interesse em programação, então comecei aprendendo Python e Lua, linguagem de programação brasileira usada em jogos, para realizar meus primeiros projetos.
+              Consequentemente, não foi difícil decidir qual área profissional seguir. Meus Hobbies são muito variados: Toco piano e violino;
+               Pratico jogos de lógica como Xadrez e Cubo mágico; Gosto de ler livros de Ficcção e Fantasia; Gosto de escutar músicas dos mais diversos gêneros;
+                Além de desenvolver Programas simples de uso Pessoal. Minhas principais qualidades são: Mentalidade de aprendizado, Autonomia e Pensamento Crítico.</p>
+        </article>
+      </section>
+      <section id="conhecimentos" class=secao>
+       <h1 style="font-family: 'Times New Roman'; color: purple;">Conhecimentos na Área:</h1>
+        <ul>
+          <li>Programação
+            <ul>
+              <li>JavaScript (Nível Básico)</li>
+              <li>HTML (Nível Básico)</li>
+              <li>CSS (Nível Básico)</li>
+              <li>Python</li>
+              <li>Lua</li>
+            </ul>
+          </li>
+          <li>Ferramentas
+            <ul>
+              <li>VS Code</li>
+              <li>Git (Nível Básico)</li>
+              <li>DevTools Chrome (Nível Básico)</li>
+            </ul>
+          </li>
+          <li>Disciplinas
+            <ul>
+              <li>Fundamentos de Informática</li>
+              <li>Introdução à Programação</li>
+              <li>Programação Web</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section class="secao">
+        <h1 style="font-family:Times New Roman; color:purple">Sobre o Curso</h1>
+        <p class="texto">O curso de Desenvolvimento de Sistemas tem como objetivo formar profissionais capazes de criar, testar e manter softwares.
+           Durante a formação, são abordados conceitos de programação, lógica computacional, desenvolvimento web, banco de dados e funcionamento de sistemas.
+            Além disso, o curso também desenvolve habilidades relacionadas ao uso de ferramentas tecnológicas e à resolução de problemas,
+             preparando o aluno para atuar na área de tecnologia.</p>
+      </section>
+
+      <section class="secao">
+        <div class="extra">
+          <img src="macarrao.png" id="macarrao">
+          <img src="https://media.tenor.com/-pMfQcryj3cAAAAj/explosion-boom.gif" 
+          id="explosion">
+          <h3 id="texto" style="width: 100px;" >Pode cuidar do meu Macarrão</h3>
+          <audio src="Audios/deltarune-explosion.mp3" id="som"></audio>
+       </div>
+      </section>
+     
+      <h3 style="font-family:Times New Roman; text-align: center;"><b>Para mais informações da Instituição,</br> acesse o Site abaixo pressionando a logo.</b></h3>
+      <aside class="aside">
+        <a href="http://www.ifal.edu.br" target="_blank">
+          <img src="https://www2.ifal.edu.br/o-ifal/comunicacao/arquivos/logos/IFAL_Macei_vertical.png" width="150">
+        </a>
+      </aside>
+    </main>
+
+    <footer id="contato" class="rodape">
+      <h3>
+        Contatos:
+        <ul>
+          <li>Email: gsgs3@aluno.ifal.edu.br</li>
+          <li>Telefone: (82) 99129-4303</li>
+        </ul>
+      </h3>
+      <p>© 2026 Gabriel Smith</p>
+    </footer>
+
+    <script src="explosion.js"></script>
+
+  </body>
+</html>
