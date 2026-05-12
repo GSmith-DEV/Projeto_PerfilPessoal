@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head lang="pt-br">
+    <meta charset="UTF-8">
+    <title>recursos Multimídia - Cap. 4 / Ativ. 4</title>
+    <style>
+      body {
+        max-width: 800px;
+        margin: auto;
+      }
+      h1 {
+        color: purple;
+        font-family: Times New Roman;
+      }
+      figure {
+        margin-bottom: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Página Multimídi - Cap 4 , Atv 4</h1>
+      <figure>
+        <video controls height="450" width="800" poster="poster-aula.jpg" preload="metadata">
+          <source src="Videos/video-aula.mp4" type="video/mp4">
+          <source src="Videos/video-aula.webm" type="video/webm">
+          <source src="Videos/video-aula.ogg" type="video/ogg">
+          
+          <track
+            kind="subtitles"
+            srclang="pt"
+            label="Português"
+            default="legendas/aula-html.vtt">
+            
+          <p>Seu navegador não suporta este vídeo
+            <a href="video/video-aula.mp4">Acesse o link para download</a>
+          </p>
+        </video>
+        <figcaption>Curso HTML e CSS (inexistente)</figcaption>
+      </figure>
+      
+      <figure>
+        <audio controls preload="metadata">
+            <source src="Audios/audio-aula.mp3" type="audio/mp3">
+          <source src="Audios/audio-aula.ogg" type="audio/ogg">
+          <p>Se navegador não suporta este arquivo
+            <a href="Audio/audio-aula.mp3">Acesse o link para download</a>
+          </p>
+        </audio>
+        <figcaption>Episódio 1 - Java Script
+          <a href="transcricao.html">Ler transcrição completa.</a>
+        </figcaption>
+      </figure>
+      
+      <figure>
+        <iframe width="800" height="450" 
+          src="https://www.youtube.com/embed/epiyExCyb2s?si=06WQvuwk6wjwEclF" 
+          title="Guia definitivo do sistema operacional Ubuntu. Feito por Fábio Akita para auxiliar desenvolvedores iniciantes" 
+          frameborder="0" 
+          poster="https://espaferro.com.br/placeholder-588-png/" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen 
+          loading="lazy">
+        </iframe>
+        <figcaption>Vídeo "Guia definitivo de Ubuntu" por fábio Akita - Fonte: youtube.com</figcaption>
+      </figure>
+      
+      <figure>
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="img/banner-wide.jpg">
+          <img 
+            src="img/banner-mobile.jpg" 
+            height="450" 
+            width="800" 
+            alt="Banner do curso de Web">
+        </picture>
+        <figcaption>Banner de desemvolvimento Web</figcaption>
+      </figure>
+      
+      <p><a href="../index.html">← Voltar à página principal</a></p> 
+    </main>
+  </body>
+</html>
