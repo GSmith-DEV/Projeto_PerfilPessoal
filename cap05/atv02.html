@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>PWEB1 - Cap. 05 - AT02 - Cadastro do Usuário</title>
+        <style>
+            h1 {
+                font-family: 'Times New Roman', Times, serif;
+                color: purple;
+            }
+            main {
+                max-width: 800px;
+                margin: auto
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                width: 500px;
+            }
+            </style>
+    </head>
+    <body>
+        <header>
+            <h1>Cadastro do Usuário</h1>
+            <p><a href="../index.html">← Voltar à página principal</a></p>
+        </header>
+        <main>
+            <form action="https://httpbin.org/post" method="post">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" required minlength="3">
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" required minlength="8">
+
+                <label for="nascimento">Data de Nascimento</label>
+                <input type="date" id="nascimento" name="nascimento" required>
+
+                <fieldset>
+                    <legend>Gênero</legend>
+                        <input type="radio" id="masculino" name="genero" value="masculino">
+                        <label for="masculino">Masculino</label>
+
+                        <input type="radio" id="feminino" name="genero" value="feminino">
+                        <label for="feminino">Feminino</label>
+
+                        <input type="radio" id="outro" name="genero" value="outro">
+                        <label for="outro">Outro</label>
+
+                        <input type="radio" id="prefiro_nao_informar" name="genero" value="prefiro_nao_informar">
+                        <label for="prefiro_nao_informar">Prefiro não informar</label>
+                </fieldset>
+
+                <label for="aceite">Concordo com os Termos.</label>
+                <input type="checkbox" id="aceite" name="aceite" value="sim" required>
+
+                <button type="reset">Limpar campos</button>
+                <button type="submit">Criar conta</button>
+
+            </form>
+
+
+        </main>
+    </body>
+</html>
